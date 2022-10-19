@@ -1,0 +1,80 @@
+:root {
+  --primary-color: rgba(214, 46, 51, 0.6);
+  /* --secondary-color: ; */
+  --secondary-color: #414658;
+  --primary-color-two: #2d313d;
+  --secondary-color-two: #323544;
+  --btn-color: #009ad8;
+  --white-color: white;
+  --gray-color: #aeb9bb;
+
+  --section-padding: 1rem;
+}
+body {
+}
+.hero {
+  background-image: url("../images/events-heavenly-header.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: cover;
+  color: var(--white-color);
+}
+.captions {
+  height: 90vh;
+  background-color: var(--primary-color);
+}
+
+.details h3 {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.details .closable {
+  background-color: var(--gray-color);
+  padding: 8px;
+}
+.duration {
+  background-image: url("../images/invitation-2508607__340.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+}
+.background-color {
+  background-color: var(--primary-color);
+}
+.duration .number {
+  border: 1px solid var(--white-color);
+  margin: 50px 0;
+}
+.counter span {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+nav {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  height: 100vh;
+}
+nav i {
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: color 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+ul a:hover {
+  color: var(--primary-color);
+}
+ul li {
+  padding: 20px 50px;
+}
