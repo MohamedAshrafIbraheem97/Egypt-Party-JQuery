@@ -10,29 +10,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="position-fixed p-5">
-      <p><i class="fa-solid fa-xmark float-end"></i></p>
-      <ul class="list-group">
-        <a href="#hero"><li>Home</li></a>
-        <a href="#details"><li>Details</li></a>
-        <a href="#duration"><li>Duration</li></a>
-        <a href="#contact"><li>Contact</li></a>
-      </ul>
-      <div class="side-text fa-2x">
-        <span><i class="fa-solid fa-bars"></i> Open</span>
-      </div>
-    </nav>
     <section class="hero mb-5" id="hero">
       <div
-        class="captions d-flex justify-content-center flex-column align-items-center"
+        class="captions position-relative d-flex justify-content-center flex-column align-items-center"
       >
         <div class="main-text text-center">
           <h2 class="fa-4x">Egyptian Party</h2>
           <p>Let's have Fun</p>
         </div>
-        <!-- <div class="side-text align-self-start m-3 fa-2x">
-          <span><i class="fa-solid fa-bars"></i> Open</span>
-        </div> -->
+        <div class="side-container align-self-start d-flex align-items-center">
+          <div class="nav d-flex flex-row-reverse">
+            <p><i class="fa-solid fa-xmark"></i></p>
+            <ul class="list-group">
+              <a href="#hero"><li>Home</li></a>
+              <a href="#details"><li>Details</li></a>
+              <a href="#duration"><li>Duration</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </ul>
+          </div>
+          <div class="side-text fa-2x ms-2 position-relative">
+            <span><i class="fa-solid fa-bars"></i> Open</span>
+          </div>
+        </div>
       </div>
     </section>
     <section class="details text-center p-5" id="details">

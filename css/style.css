@@ -53,14 +53,19 @@ body {
   font-weight: 500;
   font-size: 1.5rem;
 }
-nav {
+.side-text {
+  cursor: pointer;
+}
+.nav {
   background-color: var(--secondary-color);
   color: var(--white-color);
+  position: fixed;
+  top: 0;
+  padding: 20px;
   height: 100vh;
 }
-nav i {
+.nav i {
   cursor: pointer;
-  padding: 20px 0;
   font-size: 1.5rem;
 }
 ul {
