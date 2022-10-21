@@ -61,3 +61,18 @@ let secondsInterval = setInterval(() => {
   // type in remaining time is in milliseconds
   days.textContent = Math.floor(remainingTime / (1000 * 3600 * 24));
 }, 1000);
+
+// remaining chars in textarea
+
+const maxNumberOfChars = 100;
+
+$(".remainingChars").text(maxNumberOfChars);
+$("textarea").keyup(function (e) {
+  let lengthOfEnteredChars = $(this).val().length;
+
+  if (maxNumberOfChars - lengthOfEnteredChars < lengthOfEnteredChars) {
+    $(".remainingChars").text("You exceeded the limit");
+  } else {
+    $(".remainingChars").text(maxNumberOfChars - lengthOfEnteredChars);
+  }
+});
