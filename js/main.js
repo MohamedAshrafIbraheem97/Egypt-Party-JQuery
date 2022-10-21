@@ -70,7 +70,7 @@ $(".remainingChars").text(maxNumberOfChars);
 $("textarea").keyup(function (e) {
   let lengthOfEnteredChars = $(this).val().length;
 
-  if (maxNumberOfChars - lengthOfEnteredChars < lengthOfEnteredChars) {
+  if (maxNumberOfChars - lengthOfEnteredChars < 0) {
     $(".remainingChars").text("You exceeded the limit");
   } else {
     $(".remainingChars").text(maxNumberOfChars - lengthOfEnteredChars);
